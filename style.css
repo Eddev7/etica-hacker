@@ -90,7 +90,7 @@ body {
 	justify-content: center;
 }
 
-.main-text h1 {
+.main-text .h1 {
 	font-size: 3rem;
 	text-align: center;
 	letter-spacing: 2rem;
@@ -108,7 +108,7 @@ body {
 	margin: 0px 50px;
 }
 
-.text-margin {
+.margin {
 	margin-bottom: 1.5rem;
 }
 
@@ -116,12 +116,12 @@ body {
 	text-align: center;
 }
 
-.artigo-principal h2 {
+.artigo-principal .h2 {
 	font-size: 2rem;
 	text-transform: capitalize;
 }
 
-.artigo-principal p {
+.artigo-principal .text {
 	font-size: 1rem;
 	text-align: center;
 	line-height: 1.8rem;
