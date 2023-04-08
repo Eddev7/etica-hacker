@@ -9,9 +9,17 @@ body {
 	background-color: black;
 }
 
+.background {
+	background-image: url(https://uploaddeimagens.com.br/images/004/421/880/full/binary-code-background1.jpg?1680919286);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	opacity: 10%;
+}
+
 #INICIO {
 	width: 100vw;
-	height: 725px;
 }
 
 .menu {
@@ -26,19 +34,14 @@ body {
 	bottom: 0;
 	margin: 20px auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 }	
 
 .menu ul {
 	list-style-type: none;
 	display: flex;
-	justify-content: center;
-}
-
-.menu ul li {
-	display: block;
-	margin: 0 2rem;
+	gap: 4rem;
 }
 
 .menu ul li a {
@@ -53,4 +56,46 @@ body {
 	background-color: black;
 	padding: 10px;
 	border-radius: 5px;
+}
+
+.inicio {
+	display: flex;
+	justify-content: center;
+}
+
+.imagem-principal {
+	margin-top: 110px;
+	background-image: url(https://uploaddeimagens.com.br/images/004/421/894/full/peakpx.jpg?1680920539);
+	background-position: center;
+	background-size: 80%;
+	width: 885px;
+	height: 408px;
+	border-radius: 20px;
+	
+}
+
+.imagem-principal:hover {
+	background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTRiMjkyM2FkMmI0OWVkMmVjODE3YzQ1OGNlMzk2OWRiMjJlNjczZCZjdD1n/zxbpj2EweF7oRGkUys/giphy.gif);
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.main-text {
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.main-text p {
+	font-size: 3rem;
+	text-align: center;
+	letter-spacing: 2rem;
+	margin: 10px;
+}
+
+.hr {
+	margin: 40px 0 ;
+	background-color: #00ff1a6e;
+	width: 100%;
+	height: 0.3em;
 }
