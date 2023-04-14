@@ -5,7 +5,7 @@
 	font-family: 'Inter', sans-serif;
 }
 
-#html {
+.html {
     scroll-behavior: smooth;
 }
 
@@ -18,13 +18,13 @@ body {
 	background-image: url(https://uploaddeimagens.com.br/images/004/421/880/full/binary-code-background1.jpg?1680919286);
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	z-index: -1;
 	opacity: 10%;
 }
 
 .section {
-	width: 100vw;
+	width: 100%;
 }
 
 .menu {
@@ -116,7 +116,7 @@ body {
 	text-align: center;
 }
 
-.artigo-principal .h2 {
+.h2 {
 	font-size: 2rem;
 	text-transform: capitalize;
 }
@@ -125,4 +125,86 @@ body {
 	font-size: 1rem;
 	text-align: center;
 	line-height: 1.8rem;
+	text-transform: uppercase;
+}
+
+.type-hacker-display {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.h3 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	
+}
+
+.type-hacker {
+	width: 33.33%;
+	margin: 10px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	background-color: #00ff1a34;
+	border-radius: 5px;
+}
+
+.chp-black, .chp-grey, .chp-white {
+	margin: 2em;
+}
+
+.chp-white {
+	background-image: url(https://uploaddeimagens.com.br/images/004/423/070/full/WHITE_HAT.png);
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	transition: all 1s;
+}
+.chp-grey {
+	background-image: url(https://uploaddeimagens.com.br/images/004/423/105/full/GREY_HAT.png);
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	transition: all 1s;
+}
+.chp-black {
+	background-image: url(https://uploaddeimagens.com.br/images/004/423/110/full/BLACK_HAT.png?1681072375);
+	background-position: center;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	transition: 1s;
+}
+
+.chp-black:hover, .chp-grey:hover, .chp-white:hover {
+	cursor: pointer;
+	background-size: 100%;
+}
+
+.type-hacker-text {
+	line-height: 1.8rem;
+}
+
+.listas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: justify;
+}
+
+.item-listas {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.h4 {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	letter-spacing: 4px;
 }
