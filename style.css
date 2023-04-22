@@ -54,6 +54,7 @@ body {
 	font-size: 1.25rem;
 	text-decoration: none;
 	transition: all 0.6s;
+	text-shadow: 0 0 10px black;
 }
 
 .menu ul li a:hover {
@@ -70,18 +71,17 @@ body {
 
 .imagem-principal {
 	margin-top: 110px;
-	background-image: url(https://uploaddeimagens.com.br/images/004/421/894/full/peakpx.jpg?1680920539);
+	background-image: url(https://uploaddeimagens.com.br/images/004/440/577/full/Google%E2%80%99s.png?1682202054);
 	background-position: center;
-	background-size: 80%;
+	background-size: 100%;
 	width: 885px;
 	height: 408px;
 	border-radius: 20px;
-	
 }
 
 .imagem-principal:hover {
 	background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTRiMjkyM2FkMmI0OWVkMmVjODE3YzQ1OGNlMzk2OWRiMjJlNjczZCZjdD1n/zxbpj2EweF7oRGkUys/giphy.gif);
-	background-size: 100%;
+	background-size: 100%;	
 	cursor: pointer;
 }
 
@@ -100,30 +100,88 @@ body {
 .hr {
 	margin: 40px 0 ;
 	background-color: #00ff1a6e;
-	width: 100%;
+	width: 100vw;
 	height: 0.3em;
 }
 
-.artigo-principal {
+.artigo {
 	margin: 0px 50px;
+	text-align: center;
 }
 
 .margin {
+	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 }
 
-.artigo-principal {
-	text-align: center;
+.margin-item {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
-.h2 {
+.h2-1 {
 	font-size: 2rem;
+	font-family: monospace;
 	text-transform: capitalize;
+	border-right: 4px solid;
+	width: 13ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 2s steps(13), blinking 0.5s infinite step-end alternate;
+	margin: 1.5rem auto;
 }
 
-.artigo-principal .text {
+.h2-2 {
+	font-size: 2rem;
+	font-family: monospace;
+	text-transform: capitalize;
+	border-right: 4px solid;
+	width: 6ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 2s steps(6), blinking 0.5s infinite step-end alternate;
+	margin: 1.5rem auto;
+}
+
+.h2-3 {
+	font-size: 2rem;
+	font-family: monospace;
+	text-transform: capitalize;
+	border-right: 4px solid;
+	width: 9ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 2s steps(9), blinking 0.5s infinite step-end alternate;
+	margin: 1.5rem auto;
+}
+
+.h2-4 {
+	font-size: 2rem;
+	font-family: monospace;
+	text-transform: capitalize;
+	border-right: 4px solid;
+	width: 11ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 2s steps(11), blinking 0.5s infinite step-end alternate;
+	margin: 1.5rem auto;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blinking {
+	50% {
+		border-color: transparent;
+	}
+}
+
+.artigo .text {
 	font-size: 1rem;
-	text-align: center;
+	text-align: justify center;
 	line-height: 1.8rem;
 	text-transform: uppercase;
 }
@@ -145,7 +203,7 @@ body {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	background-color: #00ff1a34;
+	background-color: #00ff1a17;
 	border-radius: 5px;
 }
 
@@ -207,4 +265,99 @@ body {
 	text-transform: uppercase;
 	font-size: 1.2rem;
 	letter-spacing: 4px;
+}
+
+.exemplo {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container-exemplo {
+	background-color: #00ff1a17;
+	border-radius: 5px;
+	padding: 10px;
+	width: 50%;
+	margin: 10px;
+}
+
+.azul, .verde, .vermelho {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	letter-spacing: 4px;
+}
+
+.azul {
+	background-color: darkblue;
+}
+
+.verde {
+	background-color: rgb(0, 255, 55);
+}
+
+.vermelho {
+	background-color: darkred;
+}
+
+.box-content {
+	background-color: #00ff1a17;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.box-imagem, .box-text {
+	width: 50%;
+}
+
+.box-imagem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagem-Kevin, .imagem-Marcus, .imagem-Gary {
+	width: 320px;
+	height: 400px;
+	border-radius: 10px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.imagem-Kevin {
+	background-image: url(https://uploaddeimagens.com.br/images/004/440/495/full/Kevin_Mitnick.jpg?1682192163);
+}
+.imagem-Marcus {
+	background-image: url(https://uploaddeimagens.com.br/images/004/440/497/full/marcus-hutchins-horizontal.jpg?1682192186);
+}
+.imagem-Gary {
+	background-image: url(https://uploaddeimagens.com.br/images/004/440/498/full/Gary_McKinnon640x480_%281%29.jpg?1682192212);
+}
+
+.link {
+	color: #FFF;
+	background-color: #00ff1a17;
+	border-radius: 5px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #00ff1a;
+}
+
+.footer {
+	text-align: justify;
+}
+
+.footer .h3 {
+	text-align: center;
+}
+
+.referencias-sites, .referencias-livros, .referencias-imagens {
+	margin: 30px;
+	background-color: #00ff1a17;
+	border-radius: 5px;
+	padding: 30px;
 }
