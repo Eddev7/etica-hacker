@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.backgroud {
+    width: 100%;
+    height: 100vh;
+    background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzk5MzdjNGQxYzk2MDVkZjNjNzEyYzQyYzdkNDE4YzU2YjdmYmI4MSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/V4NSR1NG2p0KeJJyr5/giphy.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 80px;
+    animation: blinking 0.5s infinite step-end alternate;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.titulo:hover {
+    color: red;
+}
+
+@keyframes blinking {
+	50% {
+		color: transparent;
+	}
+}
+
+.scape {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar {
+    background-color: #00ff1a17;
+    border-style: none;
+    font-size: 2rem;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    margin: 0px auto;
+}
+
+.voltar:hover {
+    color: #00ff1a;
+}
