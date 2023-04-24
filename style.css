@@ -361,3 +361,7 @@ body {
 	border-radius: 5px;
 	padding: 30px;
 }
+
+.margin-footer {
+	margin: 30px;
+}
